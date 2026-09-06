@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plan-drift"
+version = "0.1.0"
+description = "Detect drift between an analytics tracking plan and the implementation. Read-only, deterministic, no LLM."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+plan-drift = "plan_drift.cli:main"
