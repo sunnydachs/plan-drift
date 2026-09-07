@@ -106,6 +106,8 @@ Validated against a real open-source repository using the segment Python library
 
 Inspired by a recurring pain observed in a personal research pipeline: tracking implementations decay silently — events get renamed, new calls bypass the plan, and nothing local catches it. This repository is an independent, general-purpose implementation.
 
+This is the third tool in a small **"drift" family**: [doc-drift](https://github.com/sunnydachs/doc-drift) checks Markdown code examples against the codebase; plan-drift checks an analytics tracking plan against the code. Same design principles throughout: deterministic, read-only, dry-run by default.
+
 ## License
 
 [MIT](LICENSE)
